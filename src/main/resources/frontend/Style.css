@@ -1,0 +1,59 @@
+.btn {
+    -fx-alignment: CENTER;
+    -fx-content-display: CENTER;
+    -fx-content-display: CENTER;
+    -fx-focus-traversable: false;
+    -fx-mnemonic-parsing: false;
+    -fx-max-height: 500;
+    -fx-max-width: 500;
+    -fx-vgrow: ALWAYS;
+    -fx-hgrow: ALWAYS;
+    -fx-font-size: 20pt;
+}
+
+/*.button:focused{
+     -fx-focus-color: transparent;
+     -fx-background-color: -fx-outer-border, -fx-inner-border, -fx-body-color;
+}*/
+
+.btnOp{
+    -fx-background-color: #F0A500;
+    -fx-border-color: white;
+}
+
+.btnOp:hover {
+    -fx-background-color: #FFB72B;
+    -fx-border-color: white;
+}
+
+.btnOp:pressed {
+    -fx-background-color: #F0A500;
+    -fx-border-color: white;
+}
+
+#btnEqual{
+    -fx-background-color: #F0A500;
+}
+
+#btnEqual:hover{
+    -fx-background-color: #FFB72B;
+}
+
+#btnEqual:pressed{
+    -fx-background-color: #F0A500;
+}
+
+GridPane {
+    -fx-vgrow: ALWAYS;
+    -fx-hgrow: ALWAYS;
+}
+
+VBox {
+    -fx-vgrow: ALWAYS;
+    -fx-hgrow: ALWAYS;
+}
+
+label {
+    -fx-vgrow: ALWAYS;
+    -fx-hgrow: ALWAYS;
+}

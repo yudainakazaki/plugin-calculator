@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="mainFrame" minHeight="-Infinity" minWidth="-Infinity" prefHeight="639.0" prefWidth="573.0" styleClass="mainPane" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.FXMLController">
+   <children>
+      <Label fx:id="messageLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="17.0" prefWidth="586.0" text="Welcome to JCalculator. Choose your plugin..." />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="resultLabel" graphicTextGap="0.0" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="835.0" text="" wrapText="true" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="62.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <GridPane fx:id="mainGrid" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="359.0" prefWidth="453.0" VBox.vgrow="ALWAYS">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="90.0" prefWidth="193.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="202.0" minWidth="90.0" prefWidth="200.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.5" minWidth="90.0" prefWidth="179.5" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.5" minWidth="90.0" prefWidth="179.5" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints />
+         </rowConstraints>
+         <children>
+            <Button fx:id="btn7" maxWidth="1.7976931348623157E308" onMouseClicked="#onNumberClicked" styleClass="btn" text="7" GridPane.rowIndex="2">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn8" maxWidth="1.7976931348623157E308" onMouseClicked="#onNumberClicked" styleClass="btn" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn9" maxWidth="1.7976931348623157E308" onMouseClicked="#onNumberClicked" styleClass="btn" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn4" maxWidth="1.7976931348623157E308" onMouseClicked="#onNumberClicked" styleClass="btn" text="4" GridPane.rowIndex="3">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn5" maxWidth="1.7976931348623157E308" onMouseClicked="#onNumberClicked" styleClass="btn" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn6" maxWidth="1.7976931348623157E308" onMouseClicked="#onNumberClicked" styleClass="btn" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn1" maxWidth="1.7976931348623157E308" onMouseClicked="#onNumberClicked" styleClass="btn" text="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn2" maxWidth="1.7976931348623157E308" onMouseClicked="#onNumberClicked" styleClass="btn" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn3" maxWidth="1.7976931348623157E308" onMouseClicked="#onNumberClicked" styleClass="btn" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn0" maxWidth="1.7976931348623157E308" onMouseClicked="#onNumberClicked" prefWidth="221.0" styleClass="btn" text="0" GridPane.rowIndex="5">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDot" maxWidth="1.7976931348623157E308" onMouseClicked="#onSymbolClicked" styleClass="btn" text="." GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAC" maxWidth="1.7976931348623157E308" onMouseClicked="#onSymbolClicked" styleClass="btn" text="AC" GridPane.rowIndex="1">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnRedo" maxWidth="1.7976931348623157E308" onMouseClicked="#onSymbolClicked" prefWidth="180.0" styleClass="btn" text="Redo" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUndo" maxWidth="1.7976931348623157E308" onMouseClicked="#onSymbolClicked" styleClass="btn" text="Undo" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEqual" maxWidth="1.7976931348623157E308" onMouseClicked="#onSymbolClicked" prefWidth="217.0" styleClass="btn" text="=" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnLoad" layoutX="388.0" layoutY="124.0" maxWidth="1.7976931348623157E308" onMouseClicked="#onSymbolClicked" styleClass="btn" text="Load" GridPane.rowIndex="6">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCloseBracket" maxWidth="1.7976931348623157E308" onMouseClicked="#onSymbolClicked" styleClass="btn" text=")" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnOpenBracket" maxWidth="1.7976931348623157E308" onMouseClicked="#onSymbolClicked" styleClass="btn" text="(" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnBack" maxWidth="1.7976931348623157E308" onMouseClicked="#onSymbolClicked" styleClass="btn" text="Back" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button id="btnClear" fx:id="btnClear" maxWidth="1.7976931348623157E308" onMouseClicked="#onSymbolClicked" styleClass="btn" text="C" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnNegative" layoutX="10.0" layoutY="382.0" maxWidth="1.7976931348623157E308" onMouseClicked="#onSymbolClicked" prefWidth="221.0" styleClass="btn" text="(-)" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAns" layoutX="10.0" layoutY="475.0" maxWidth="1.7976931348623157E308" onMouseClicked="#onSymbolClicked" styleClass="btn" text="Ans" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</VBox>

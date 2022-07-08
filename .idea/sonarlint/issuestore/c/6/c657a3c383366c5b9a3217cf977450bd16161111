@@ -1,0 +1,9 @@
+
+f
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(šÆŽŠ
+k
+java:S1149	"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(¯åÍÎþÿÿÿÿ
+k
+java:S1104"UMake undoStack a static final constant or non-public and provide accessors if needed.(šÆŽŠ
+p
+java:S1104	"UMake redoStack a static final constant or non-public and provide accessors if needed.(¯åÍÎþÿÿÿÿ
