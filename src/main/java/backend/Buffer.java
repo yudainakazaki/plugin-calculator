@@ -39,7 +39,7 @@ public class Buffer {
         BigDecimal num = resUndoRedo.undoStack.pop();
         expUndoRedo.redoStack.push(exp);
         resUndoRedo.redoStack.push(num);
-        return exp+"="+num;
+        return exp+"= "+num;
     }
 
     public String redo(){

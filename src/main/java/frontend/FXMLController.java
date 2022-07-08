@@ -23,15 +23,13 @@ public class FXMLController implements Initializable {
     private final Buffer buffer = Buffer.getInstance();
     private boolean clearScreen = false;
 
-
     @FXML private GridPane mainGrid;
     //Label on GUI showing the val of curOperand
     @FXML private Label resultLabel;
     @FXML private Label messageLabel;
 
     @Override
-    public void initialize(URL url, ResourceBundle rb) {
-    }
+    public void initialize(URL url, ResourceBundle rb) {}
 
     @FXML
     private void onNumberClicked(MouseEvent event) {
@@ -45,15 +43,18 @@ public class FXMLController implements Initializable {
         }
         resultLabel.setText(curText + value + " ");
     }
+
     private void clearScreenAfterResult(){
         if(clearScreen){
             resultLabel.setText("");
             clearScreen = false;
         }
     }
+
     private boolean isLegalFloatingPoint(String curText){
         return !curText.isEmpty() && !curText.equals("-") && isDigit(curText.charAt(curText.length()-2)) ;
     }
+
     @FXML
     private void onSymbolClicked(MouseEvent event) throws InterruptedException {
         clearScreenAfterResult();

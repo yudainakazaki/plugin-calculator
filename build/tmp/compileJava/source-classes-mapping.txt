@@ -6,8 +6,8 @@ backend/ResultUndoRedo.java
  backend.ResultUndoRedo
 backend/UndoRedo.java
  backend.UndoRedo
-frontend/Utilities.java
- frontend.Utilities
+backend/ExpUndoRedo.java
+ backend.ExpUndoRedo
 backend/Calculator.java
  backend.Calculator
 backend/Buffer.java
@@ -19,5 +19,3 @@ backend/RPNMethod.java
  backend.RPNMethod
 frontend/FXMLController.java
  frontend.FXMLController
-backend/ExpUndoRedo.java
- backend.ExpUndoRedo
